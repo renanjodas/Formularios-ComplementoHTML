@@ -10,12 +10,12 @@ Complemento da Aula Formulários com mais TAGs
 
 ### Comandos Utilizados:
 
-* \<header>\</header>\ -  elemento <header> representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação. Geralmente contém:  
+* \<header>\</header> -  elemento <header> representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação. Geralmente contém:  
 
-um ou mais elementos de cabeçalho (\<h1> -\ <h6>)  
+um ou mais elementos de cabeçalho (\<h1> -\<h6>)  
  logotipo ou ícone  
  informação de autoria  
- Você pode ter vários elementos <header> em um documento.  
+ Você pode ter vários elementos \<header> em um documento.  
    Obs: Uma tag \<header> não pode ser colocada dentro de um \<footer>, \<address> ou outro elemento \<header>.  
 Ex. 
 
@@ -27,7 +27,7 @@ Ex.
 
  ```
  ---  
- * \<footer>\</footer>\ - define um rodapé para um documento ou seção. Um elemento \<footer> deve conter informações sobre seu elemento contido. Geralmente contém:  
+ * \<footer>\</footer> - define um rodapé para um documento ou seção. Um elemento \<footer> deve conter informações sobre seu elemento contido. Geralmente contém:  
 
 . informação de autoria  
 . Informações sobre direitos autorais  
@@ -44,7 +44,7 @@ Você pode ter vários elementos \<footer> em um documento.
        </footer>
  ```  
  ---  
- * \<main>\</main>\ - define o conteúdo principal dentro do \<body> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. O mesmo deverá ser único na página, ou seja, dentro do elemento \<main> não deverão ser incluídas seções da página que sejam comuns a todo o site ou aplicação, tais como mecanismos de navegação, informações de copyright, logotipo e campos de busca \(a não ser, é claro,  caso a função principal do documento seja  fazer algum tipo de busca). 
+ * \<main>\</main> - define o conteúdo principal dentro do \<body> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. O mesmo deverá ser único na página, ou seja, dentro do elemento \<main> não deverão ser incluídas seções da página que sejam comuns a todo o site ou aplicação, tais como mecanismos de navegação, informações de copyright, logotipo e campos de busca (a não ser, é claro,  caso a função principal do documento seja  fazer algum tipo de busca). 
  Ex.:
  
  ```html
@@ -63,7 +63,7 @@ Você pode ter vários elementos \<footer> em um documento.
 
  ```  
  ---  
- * Comando   \‘&copy;’\ - insere símbolo copyright 
+ * Comando   \‘&copy;’ - insere símbolo copyright 
  
   Ex.:
  ```html

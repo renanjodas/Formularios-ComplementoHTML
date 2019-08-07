@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--na pagina em branco, digitar 'html' - pressionar ESC - pressionar CTRL + SPACE - pressionar ENTER, o programa carrega um padrão de pagina -->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Triagem</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1>Triagem</h1>
+    </header>
+    <main>
+        <form action="iniciar-ocorrencia.html" method="POST">
+            <strong> A vítima está acordada?</strong><br>
+            <input type="radio" name="acordado" value="sim">Sim <br>
+            <input type="radio" name="acordado" value="não">Não <br>
+            <br>
+            <strong>A vítima bateu a cabeça?</strong><br>
+            <input type="radio" name="cabeca" value="sim">Sim <br>
+            <input type="radio" name="cabeca" value="não">Não <br>
+            <br>
+            <strong>A vítima está respondendo?</strong><br>
+            <input type="radio" name="respondendo" value="sim">Sim <br>
+            <input type="radio" name="respondendo" value="não">Não <br>
+            <br>
+            <strong>Há quanto tempo aproximadamente ocorreu o acidente?</strong><br>
+            <input type="radio" name="tempo" value="10">até 10 min<br>
+            <input type="radio" name="tempo" value="20">até 20 min<br>
+            <input type="radio" name="tempo" value="30">Mais de 30 min<br>
+            <input type="radio" name="tempo" value="não sei">Não sei dizer!<br>
+            <br>
+            <button>Enviar</button>
+        </form>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <em>&copy; 2019 - Jodas Sistemas</em>
+    </footer>
+</body>
+</html>

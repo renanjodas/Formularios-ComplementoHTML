@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro de Usuário</title>
+    </head>
+    <body>
+        <img src="_imagens/cadastro.png">
+        <h1>Cadastro de Usuário</h1>
+        <hr>
+            <!--container-->
+            <form name="form_cadastro_usuario" action="salvar-usuario.html" method="post">
+                
+                <fieldset>
+                    <legend><strong>Informações Pessoais</strong></legend>
+                    
+                    <label for="nome">Nome: </label> 
+                    <input id="nome" name="nome" maxlength="20" placeholder="Nome" required> 
+
+                    <label for="sobrenome">Sobrenome: </label> 
+                    <input id="sobrenome" name="sobrenome" maxlength="50" placeholder="Sobrenome" required><br>
+                    <br>
+                    <label for="email">E-mail: </label>
+                    <input id="email" name="email" maxlength="50" placeholder="E-mail" type="email" required><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Informações de Usuário</strong></legend>
+                    
+                    <label for="usuario"> Nome de Usuário:</label>
+                    <input name="usuario" id="usuario" maxlength="30" placeholder="Nome de usuário" required><br>
+                    <br>
+                    <label for="senha">Senha:</label> <input name="senha" id="senha" type="password" maxlength="10" size="20" placeholder="Insira a Senha" required> &nbsp; <label for="confirma_senha">Confirmação de Senha:</label>  <input name="confirma_senha" id="confirma_senha" type="password" maxlength="10" size="20" placeholder="Confirme a Senha" required><br>
+                    <br>
+                    <label for="dica_senha">Dica de Senha:</label>  <input name="dica_senha" id="dica_senha" maxlength="30" size="30" placeholder="Insira uma dica de senha"><br>
+                    
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Redes Sociais</strong></legend>
+                    <br>
+                    <label for="linkedin"><img src="_imagens/linkedin.png"><i>linkedin.com.br/in/</i></label><input name="linkedin" id="linkedin" size="10"><br>
+
+                    <label for="facebook"><img src="_imagens/facebook.png"><i>facebook.com.br/</i></label><input name="facebook" id="facebook" size="10"><br>
+
+                    <label for="instagram"><img src="_imagens/instagram.png"><i>instagram.com/</i></label><input name="instagram" id="instagram" size="10"><br><br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Contrato</strong></legend>
+                    Aceita os termos do contrato?
+                    <br>
+                    <input type="radio" name="contrato">Sim
+                    &nbsp; &nbsp;
+                    <input type="radio" name="contrato">Não <br>
+                    <br>
+                    Aceita esse outro contrato?
+                    <select name="contrato2">
+                        <option></option>
+                        <option>Sim</option>
+                        <option>Com certeza</option>
+                    </select>
+                </fieldset>
+                <br>
+                <button onclick="location.href='inicial.html'">Voltar</button>
+                <button onclick="location.href='arquivo-salvo.html'">Salvar</button>
+                <br>
+                <br>
+                <hr>
+            </form>
+            
+            <footer>
+                <em>&copy; 2019 - Jodas Sistemas</em>
+            </footer>
+    </body>
+</html>

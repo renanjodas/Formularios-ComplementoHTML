@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Voluntarie-se</title>
+    </head>
+    <body>
+        <header>
+            <h1>Quero ser um voluntário</h1>
+        </header>
+        <main>
+            <form action="cadastrar-voluntario.html">
+                <label for="nome">Nome: </label>
+                <input id="nome" name="nome" maxlength="50" placeholder="Insira seu Nome" required><br> 
+                <br>
+                <label for="email">E-mail: </label>
+                <input id="email" name="email" maxlength="30" placeholder="Insira seu E-mail" type="email" required><br>
+                <br>
+                <label for="telefone">Telefone: </label>
+                <input type="tel" id="telefone" name="telefone" required><br>
+                <br>
+                <label for="foto">Foto: </label>
+                <input id="foto" name="foto" type="file" required><br>
+                <br>
+                <button onclick="location.href='inicial.html'">Voltar</button>
+                <button onclick="location.href='voluntario-cadastrado.html'">Salvar</button>
+            </form>
+            <br>
+        </main>
+    </body>
+</html>

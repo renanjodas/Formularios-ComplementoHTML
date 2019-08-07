@@ -3,97 +3,129 @@ Complemento da Aula Formulários com mais TAGs
 
 ### Descrição da atividade:
 
-- Criar Repositório no github e clonar no computador
-- Criar 1 página em HTML e editar conforme orientação do professor tela de Login e trabalhando com formulários
-- Desenvolver 1 página de cadastro de usuário com formulário
-- Subir os arquivos para o repositório
+ - Continuação da atividade de Formulários
+ - Criar arquivo inicial.html dentro da pasta formulários e redigir o que fora solicitado pelo docente.
+ - Criar mais páginas com os seguintes títulos: Solicitar ajuda, Aprovar novo usuário, Quero ser voluntário, Ocorrências, Triagem 
 
 
 ### Comandos Utilizados:
 
-* form - Tag para indicar formulario  
-* action - ação do formulário (ação de enviar para banc - tag para inserção de link (externo ou local)  
- Ex.:
+* \<header>\</header>\ -  elemento <header> representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação. Geralmente contém:  
+
+um ou mais elementos de cabeçalho (\<h1> -\ <h6>)  
+ logotipo ou ícone  
+ informação de autoria  
+ Você pode ter vários elementos <header> em um documento.  
+   Obs: Uma tag \<header> não pode ser colocada dentro de um \<footer>, \<address> ou outro elemento \<header>.  
+Ex. 
+
  ```html
-  <form name="form_login" action="inicial.html">
+      <header>
+           Usuário logado: Renan
+           <a href="index.html">Sair</a>
+       </header>
+
  ```
  ---  
- * label - indica um rótulo(legenda)  
- * input - insere uma caixa de texto para “entrar/inserir” com algum dado/informação/texto  
-   name - como sera chamada esta caixa | id - identificação (tipo variavel - direcionar) | maxlength - limite de caracteres   
+ * \<footer>\</footer>\ - define um rodapé para um documento ou seção. Um elemento \<footer> deve conter informações sobre seu elemento contido. Geralmente contém:  
+
+. informação de autoria  
+. Informações sobre direitos autorais  
+. informações de contato  
+. sitemap  
+. voltar ao topo links  
+. documentos relacionados  
+Você pode ter vários elementos \<footer> em um documento.  
  Ex.:
+ 
  ```html
-  <label for="usuario">Usuário:</label>
-               <input name="usuario" id="usuario" maxlength="30">
+       <footer>
+           <em>&copy; 2019 - Jodas Sistemas</em>
+       </footer>
+ ```  
+ ---  
+ * \<main>\</main>\ - define o conteúdo principal dentro do \<body> em seu documento ou aplicação. Entende-se como conteúdo principal aquele relacionado diretamente com o tópico central da página ou com a funcionalidade central da aplicação. O mesmo deverá ser único na página, ou seja, dentro do elemento \<main> não deverão ser incluídas seções da página que sejam comuns a todo o site ou aplicação, tais como mecanismos de navegação, informações de copyright, logotipo e campos de busca \(a não ser, é claro,  caso a função principal do documento seja  fazer algum tipo de busca). 
+ Ex.:
+ 
+ ```html
+  <main>
+           <h3>Escolha uma opção</h3>
+           <ul>
+               <li>
+                   <a href="cadastro-usuario.html">Cadastrar um usuário</a>
+               </li>
+               <li><a href="ajuda.html">Solicitar ajuda</a></li>
+               <li><a href="aprovar-usuario.html">Aprovar novo usuário</a></li>
+               <li><a href="ser-voluntario.html">Quero ser voluntário</a></li>
+               <li><a href="ocorrencias.html">Ocorrências</a></li>
+           </ul>
+       </main>
 
  ```  
  ---  
- * title - aponta comentario quando usuario passa o mouse em cima  
- Ex.:
- ```html
-  <label for="usuario" title="Label do Usuário">Usuário:</label>
- ```  
- ---  
- * placeholder - Define a ajuda para o usuário preencher o campo com os dados corretos  
+ * Comando   \‘&copy;’\ - insere símbolo copyright 
+ 
   Ex.:
  ```html
   <input name="usuario" id="usuario" maxlength="30" placeholder="Nome de usuário ou E-mail">
  ```  
  ---  
- * method e ‘value’ POST - para, ao clicar em enviar, na URL não apareça os dados enviados pelo form (como a senha)  
+ * comando - na página em branco, digitar \'html' - pressionar ESC - pressionar CTRL + SPACE - pressionar ENTER, o programa carrega um padrão de pagina →  
  Ex.:
- ```html
-  <form name="form_login" action="inicial.html" method="POST">
- ```  
- ---  
- * fieldset - cria uma caixa com informações dentro  
- * legend - cria legenda desta caixa  
- Ex.:
- ```html
-         <fieldset>
-               <legend><strong>Informações Pessoais</strong></legend>
-                  
-               <label for="nome">Nome: </label>
-               <input id="nome" name="nome" maxlength="20" placeholder="Nome">
  
-               <label for="sobrenome">Sobrenome: </label>
-               <input id="sobrenome" name="sobrenome" maxlength="50" placeholder="Sobrenome"><br>
-               <br>
-               <label for="email">E-mail: </label>
-               <input id="email" name="email" maxlength="50" placeholder="E-mail"><br>
-          </fieldset>
+ ```html
+  <html>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <title>Page Title</title>
+   <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   <script src='main.js'></script>
+</head>
+<body>
+  
+</body>
+</html>
+
  ```  
  ---  
- * required - no input, torna o campo obrigatório.  
+ * Tabelas  
+\<table>\</table> - tabela  
+Uma tabela HTML possui dois tipos de células:  
+\<tr>\</tr> - table-row - define uma linha em uma tabela HTML,   
+\<th>\</th> - define uma célula de cabeçalho em uma tabela HTML, está em negrito e centralizado por padrão.  
+\<td>\</td> - Células padrão - contém dados, é regular e alinhado à esquerda por padrão.  
  Ex.:
  ```html
-  <label for="nome">Nome: </label> 
-                    <input id="nome" name="nome" maxlength="20" placeholder="Nome" required> 
+         <table>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Mari</td>
+                        <td>(11)1111-1111</td>
+                        <td><img src="_imagens/facebook.png"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>José</td>
+                        <td>(22)2222-2222</td>
+                        <td><img src="_imagens/instagram.png"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Bob</td>
+                        <td>(33)3333-3333</td>
+                        <td><img src="_imagens/linkedin.png"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Júnior</td>
+                        <td>(44)4444-4444</td>
+                        <td><img src="_imagens/facebook.png"></td>
+                    </tr>
+           </table>
+
  ```  
- ---  
- * tipo de input "radio" (seleção)  
- Ex.:
- ```html
-    <fieldset>
-                        <legend><strong>Contrato</strong></legend>
-                        Aceita os termos do contrato?
-                        <br>
-                        <input type="radio" name="contrato">Sim
-                        &nbsp; &nbsp;
-                        <input type="radio" name="contrato">Não <br>
-    </fieldset>
- ```   
- ---   
- * select - cria caixa de seleção  
- * option - define a lista de opções da caixa de seleção  
- Ex.:
- ```html
-    <select name="contrato2">
-             <option></option>
-             <option>Sim</option>
-             <option>Com certeza</option>
-    </select>
- ```   
  ---  
  ### Author
  [Renan Dias Jodas](https://br.linkedin.com/in/renanjodas)
